@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Team, Player, Coach
+from soccer.models import Team, Player, Coach
 
 # Register your models here.
 
