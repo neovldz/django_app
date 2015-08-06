@@ -1,1 +1,1 @@
-[
+[{"fields": {"username": "edgar", "first_name": "", "last_name": "", "is_active": true, "is_superuser": true, "is_staff": true, "last_login": "2015-08-04T18:16:43.809Z", "groups": [], "user_permissions": [], "password": "pbkdf2_sha256$20000$NI6wwS0LpBcp$nd1ge0aFA5/JSdz/9hRc+/AGTS6EuT+igOgtC7myvNE=", "email": "edgarrealm@gmail.com", "date_joined": "2015-08-04T00:44:04.929Z"}, "model": "auth.user", "pk": 1}]
