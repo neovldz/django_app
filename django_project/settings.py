@@ -24,6 +24,7 @@ SECRET_KEY = 'liwu-hc-(o13gs+6$jg8er$ddw8rv1eor!%cr=fm^*)i2w@uxl'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
 CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
