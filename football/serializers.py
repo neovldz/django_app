@@ -21,16 +21,12 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 
 class PlayerSerializer(serializers.HyperlinkedModelSerializer):
 
-    team_name = serializers.CharField(source='team.name')
-
     class Meta:
         model = Player
         fields = ('url', 'name', 'team', 'team_name')
 
 
 class TeamSerializer(serializers.HyperlinkedModelSerializer):
-
-    coach = serializers.StringRelatedField()
 
     class Meta:
         model = Team
