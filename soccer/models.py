@@ -1,11 +1,8 @@
 from django.db import models
 
-# Create your models here.
-
 
 class Team(models.Model):
-    """"
-    my doc string
+    """
     """
 
     name = models.CharField(max_length=200)
@@ -30,10 +27,10 @@ class Coach(models.Model):
     """
     """
 
+    name = models.CharField(max_length=200)
+
     class Meta:
         verbose_name_plural = "Coaches"
-
-    name = models.CharField(max_length=200)
 
     def __unicode__(self):
         return self.name
