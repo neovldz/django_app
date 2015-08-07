@@ -24,7 +24,7 @@ SECRET_KEY = 'liwu-hc-(o13gs+6$jg8er$ddw8rv1eor!%cr=fm^*)i2w@uxl'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
@@ -37,11 +37,13 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'soccer',
     'rest_framework',
-    'football'
+    'football',
+    'corsheaders',
 )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
